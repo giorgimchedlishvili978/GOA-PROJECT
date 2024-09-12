@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <h1 id="manga">4 საუკეთესო მანგა მთელს მსოფლიოში!</h1>
+
+    <div class="allcard">
+        <div class="card">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Wikipe-tan_manga_page1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">პირველი მანგა</h5>
+                <button class="btn btn-primary show-description" data-description="ეს მანგა იკვლევს თავგადასავლებისა და საიდუმლოების ეპიკურ მოგზაურობას, სავსე დაუვიწყარი პერსონაჟებითა და მომხიბვლელი სიუჟეტით.">აღწერა</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://rukminim2.flixcart.com/image/416/416/xif0q/poster/h/n/n/medium-manga-panel028-shinobi-17-naruto-anime-shinobi-manga-original-imagh42d3updnx3a.jpeg?q=70&crop=false" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">მეორე მანგა</h5>
+                <button class="btn btn-primary show-description" data-description="მიჰყევით ამ საკულტო ნინძას თავგადასავალს, როდესაც ის ებრძვის დიდ მტრებს და აღმოაჩენს ღრმა საიდუმლოებებს თავისი სამყაროსა და საკუთარი თავის შესახებ.">აღწერა</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://static01.nytimes.com/newsgraphics/2023-06-13-manga-translation/0ecaf47ddf2ca296ea63c78681639ff963f3a1ba/_big_assets/images/abandon-111-460_x2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">მესამე მანგა</h5>
+                <button class="btn btn-primary show-description" data-description="დამაინტრიგებელი ზღაპარი, რომელიც იკვლევს დაკარგვისა და გამოსყიდვის თემებს, გახვეული დამაინტრიგებელი და ლამაზად ილუსტრირებული თხრობით.">აღწერა</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://static01.nytimes.com/newsgraphics/2023-06-13-manga-translation/0ecaf47ddf2ca296ea63c78681639ff963f3a1ba/_big_assets/images/red-flowers-460_x2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">მეოთხე მანგა</h5>
+                <button class="btn btn-primary show-description" data-description="სიყვარულისა და დაკარგვის ემოციური ისტორია, სადაც ყოველი გვერდი გვთავაზობს სიღრმის ახალ ფენას და ასახავს პერსონაჟების მოგზაურობას.">აღწერა</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup and overlay -->
+    <div class="popup-overlay"></div>
+    <div class="description-popup">
+        <p id="popup-description"></p>
+        <button class="popup-close">ჩაკეცვა</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: BPG 110 Mod;
+    src: url(fonts/BPG_110_Mod_Caps.ttf);
+    font-weight: bold;
+  }
+.card-title{
+    font-family: BPG 110 Mod;
+    font-size: 30px;
+}
+
+.allcard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  border: 2px solid black;
+  border-radius: 23px;
+  padding: 29px;
+
+}
+
+#manga{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: rgba(185, 160, 160, 0.813);
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card:hover{
+    transition: 0.5s smooth black;
+    transform: translateY(-10px);
+}
+
+.card-img-top{
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* Additional CSS for popup */
+.description-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-close {
+    background: #f00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
